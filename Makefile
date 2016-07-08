@@ -12,3 +12,6 @@ clean:
 
 upload: build
 	docker push ${DOCKER_REPO}
+
+example: build
+	docker build -f example.dockerfile .

@@ -16,5 +16,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+ADD docker-apt-install /usr/local/bin
+
 # upgrade the pip package to the latest version
 RUN pip install --upgrade pip
