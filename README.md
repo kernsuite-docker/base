@@ -10,7 +10,7 @@ A basic Ubuntu 16.04 image with the radio-astro PPA repository enabled.
 
 * Has worldwide location based mirrors configured
 * Has Universe, Multiverse and Restricted repo's enabled
-* Has the KERN development launchpad PPA enabled
+* Has the KERN-1 repostory enabled
 
 You can manually build this image with `make build `or download it
 from the docker hub with the name radioastro/base:

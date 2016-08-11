@@ -13,7 +13,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN add-apt-repository -y ppa:kernsuite/kern-dev
+RUN add-apt-repository -y ppa:kernsuite/kern-1
 RUN apt-add-repository multiverse
 
 ADD docker-apt-install /usr/local/bin
