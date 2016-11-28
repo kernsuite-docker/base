@@ -3,19 +3,15 @@ MAINTAINER gijsmolenaar@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-        software-properties-common \
-        python-software-properties  \
-    && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ADD docker-apt-install /usr/local/bin
+
+RUN docker-apt-install \
+    software-properties-common \
+    python-software-properties
 
 RUN add-apt-repository -y ppa:radio-astro/main
-RUN apt-add-repository multiverse
+RUN add-apt-repository -y multiverse
 
-ADD docker-apt-install /usr/local/bin
+# upgrade the pip package to the latest version
 ADD https://bootstrap.pypa.io/get-pip.py /
 RUN python /get-pip.py
-
