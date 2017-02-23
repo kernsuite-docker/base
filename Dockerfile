@@ -10,7 +10,7 @@ RUN docker-apt-install \
     python-software-properties  \
     python-pip 
 
-RUN add-apt-repository -y ppa:kernsuite/kern-1
+RUN add-apt-repository -y ppa:kernsuite/kern-2
 RUN add-apt-repository -y multiverse
 
 # upgrade the pip package to the latest version
