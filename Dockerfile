@@ -7,11 +7,9 @@ ADD docker-apt-install /usr/local/bin
 
 RUN docker-apt-install \
     software-properties-common \
-    python-software-properties  \
-    python-pip 
+    python-software-properties 
 
 RUN add-apt-repository -y ppa:kernsuite/kern-dev
 RUN add-apt-repository -y multiverse
+RUN add-apt-repository -y restricted
 
-# upgrade the pip package to the latest version
-RUN pip install --upgrade pip
