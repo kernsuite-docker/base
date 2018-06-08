@@ -1,4 +1,4 @@
-DOCKER_REPO=kernsuite/base:3
+DOCKER_REPO=kernsuite/base:4
 
 .PHONY: build clean
 
