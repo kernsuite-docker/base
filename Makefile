@@ -1,11 +1,11 @@
-DOCKER_REPO=kernsuite/base:4
+DOCKER_REPO=kernsuite/base:5
 
 .PHONY: build clean
 
 all: build
 
 build:
-		docker build --pull -t ${DOCKER_REPO} .
+	docker build --pull -t ${DOCKER_REPO} .
 
 clean:
 	docker rmi ${DOCKER_REPO}

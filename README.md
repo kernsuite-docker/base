@@ -8,7 +8,7 @@ at http://kernsuite.info
 
 This Docker image is:
 * Based on Ubuntu 18.04
-* Has the KERN version 4 launchpad PPA enabled
+* Has the KERN version 5 launchpad PPA enabled
 * Has Universe, Multiverse and Restricted repo's enabled
 * Has a docker-apt-install script which can be used
   to install debian package while keeping the Docker image
@@ -20,7 +20,7 @@ from the docker hub with the name radioastro/base:
 usage: `$ docker run kernsuite/base <cmd>`
 
 **note**: you can use this image as a base for your custom image. Just
-put `FROM: kernsuite/base:3` as the first line in your `Dockerfile`.
+put `FROM kernsuite/base:5` as the first line in your `Dockerfile`.
 
 https://registry.hub.docker.com/u/kernsuite/base/
 
