@@ -5,7 +5,7 @@ DOCKER_REPO=kernsuite/base:dev
 all: build
 
 build:
-		docker build --pull -t ${DOCKER_REPO} .
+	docker build --pull -t ${DOCKER_REPO} .
 
 clean:
 	docker rmi ${DOCKER_REPO}

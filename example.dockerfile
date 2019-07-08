@@ -1,4 +1,1 @@
-FROM kernsuite/base:dev
-
-RUN docker-apt-install tempo2
-
+RUN docker-apt-install casacore-tools
