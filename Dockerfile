@@ -8,6 +8,6 @@ RUN docker-apt-upgrade
 
 RUN docker-apt-install software-properties-common
 
-RUN add-apt-repository -y ppa:kernsuite/kern-5
+RUN add-apt-repository -y ppa:kernsuite/kern-6
 RUN add-apt-repository -y multiverse
 RUN add-apt-repository -y restricted

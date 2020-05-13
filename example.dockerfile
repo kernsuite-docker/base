@@ -1,4 +1,4 @@
-FROM kernsuite/base:5
+FROM kernsuite/base:6
 
 RUN docker-apt-install casacore-tools
 
