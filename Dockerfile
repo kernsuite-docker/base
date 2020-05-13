@@ -2,6 +2,9 @@ FROM ubuntu:18.04
 MAINTAINER gijsmolenaar@gmail.com
 
 ADD docker-apt-install /usr/local/bin
+ADD docker-apt-upgrade /usr/local/bin
+
+RUN docker-apt-upgrade
 
 RUN docker-apt-install software-properties-common
 
