@@ -7,8 +7,8 @@ KERN is the radio astronomical software suite. Read more about KERN
 at http://kernsuite.info
 
 This Docker image is:
-* Based on Ubuntu 18.04
-* Has the KERN version 6 launchpad PPA enabled
+* Based on Ubuntu 20.04
+* Has the KERN version 7 launchpad PPA enabled
 * Has Universe, Multiverse and Restricted repo's enabled
 * Has a docker-apt-install script which can be used
   to install debian package while keeping the Docker image
